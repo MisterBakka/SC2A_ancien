@@ -1,0 +1,267 @@
+ html {
+  min-width: 1440px;
+  margin: 0%;
+  padding: 0%;
+  Height:5912px
+  Top: -480px
+  left: -655px
+  }
+  /* Styles généraux */
+  body {
+    font-family: 'futura'
+    min-width: 100%;
+    margin: 0;
+    z-index: 2;
+  }
+
+ h1 {
+ 
+  min-width: 53%;
+  height: 198px;
+  left: 127px;
+  top: 227px;
+
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 66px;
+  display: flex;
+  align-items: center;
+  color: #D68F07;
+ }
+ h2 {
+  
+  width: 467px;
+  height: 48px;
+  left: 122px;
+  top: 1306px;
+
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 49px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+  text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+ }
+ a {
+  text-decoration: none;
+ }
+
+  main {
+    padding: 0 67px 0 67px;
+    background: linear-gradient(	#87CEFA	, white,#87CEFA	, white, #87CEFA, white	);
+  }
+  .header {
+    min-width: 100%;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 125px;
+    margin: 125px;
+    cursor: pointer;
+  }
+  
+  .description {
+    margin: 0px 0px 0 119px;
+  }
+ .textdescription {
+ }
+  .menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 72px 0 0;
+    width: 90%;
+  }
+  
+  .menu li {
+    margin-left: 10px;
+    margin-right: 40px;
+  }
+  
+  .menu a {
+    color: black;
+    text-decoration: none;
+  }
+  .lienancre {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+
+  }
+  .lienancre:hover {
+    border-bottom: 1px solid;
+  }
+  .contactez {
+    background-color: white;
+    border: 2px solid orange;
+    border-radius: 20px;
+    padding: 15px;
+    cursor: pointer;
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+
+  }
+  .contactez:hover {
+    color: #D68F07;
+    border: 2.3px solid #D68F07;
+  }
+  .firstlottie {
+    position: absolute;
+    width: 50%;
+    height: 328px;
+    left: 832px;
+    top: 338px;
+
+background: url(.png);
+  }
+  
+  main {
+    padding: 20px;
+  }
+  .cercle {
+    width: 200px; /* Ajustez la taille du conteneur selon vos besoins */
+    height: 200px;
+    border-radius: 50%; /* Applique une forme de cercle */
+    overflow: hidden; /* Masque le contenu qui dépasse du cercle */
+  }
+  
+  .cercle img {
+    width: 100%; /* Ajuste la taille de l'image pour remplir le conteneur */
+    height: 100%;
+    object-fit: cover; /* Redimensionne l'image pour remplir le conteneur */
+  }
+  .btn-contact {
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    background-color:  #D68F07 ;
+    border-radius: 25px;
+
+  }
+  .p-btn {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: white;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    cursor: pointer;
+    padding: 28px 35px 5px;
+    margin: 10px;
+    text-decoration: none;
+  }
+  .btn-question {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+  }
+  .question {
+    display: flex;
+    flex-direction: row;
+    padding: 45px 0px 0px 0px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .text1 {
+    margin-top: 100px;
+  }
+  /***description**/
+  .description2 {
+
+    margin: 0px 0px 0 119px;
+  }
+
+  .photo-nom {
+
+  }
+
+
+
+
+/**solutions**/
+  .solutions {
+    margin: 0px 0px 0 119px;
+  }
+  .listcards {
+    display: flex;
+    gap: 24px;
+    row-gap: 24px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 23px;
+    margin-bottom: 40px;
+   
+  }
+  .cards {
+    flex: 30%;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    background: linear-gradient(#d6d6d6, #ffffff);
+    flex-wrap: wrap;
+  }
+
+  .particuliers {
+    margin: 0px 0px 0 119px;
+  }
+  /****ou***/
+  .ou {
+  margin: 0px 0px 0 119px;
+  }
+
+  /**contact**/
+
+  .contact {
+    margin: 0px 0px 0 119px;
+  }
+
+  /*** footer ****/
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  form {
+    width: 300px;
+  }
+  
+  label, input, select, textarea {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    margin-top: 10px;
+  }
