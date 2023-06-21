@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>SC2A</title>
     <link rel="stylesheet" href="./site sabri/css/style.css">
 </head>
 <body>
   <!--header-->
-    <header class="header">
+    <header class="header" class="bar">
       <div>
         <img href="index.html" class="logo" src="./site sabri/Logo/logo 1.png" alt="SC2A">
       </div>
       <nav>
         <ul class="menu">
-          <li><a href="#section1" class="lienancre">Qui sommes-nous ?</a></li>
-          <li><a href="#section2" class="lienancre">Nos solutions</a></li>
-          <li><a href="#section3" class="lienancre">Où nous trouvez ?</a></li>
-          <li><a href="#myform" class="contactez">Contactez-nous</a></li>
+          <li><a href="#qui" class="lienancre"><span class="bar"></span>Qui sommes-nous ?</a></li>
+          <li><a href="#solution" class="lienancre"><span class="bar"></span>Nos solutions</a></li>
+          <li><a href="#trouver" class="lienancre"><span class="bar"></span>Où nous trouvez ?</a></li>
+          <li><a href="#contact" class="contactez"><span class="bar"></span>Contactez-nous</a></li>
         </ul>
       </nav>
     </header>
@@ -27,6 +28,7 @@
       <section class="description">
         <h1>UNE SECURITE PRESERVEE
            <br> EST UN AVENIR ASSURE
+           
         </h1>
            <div class="firstlottie">
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -39,43 +41,48 @@
            </div>
           <section class="btn-question">
           <div class="btn-contact">
-            <a href="#myform"><p class="p-btn">Contactez-nous</p></a>
+            <a href="#contact"><p class="p-btn">Contactez-nous</p></a>
           </div>
           <div>
             <a class="question" href=""><p>SC2A qu'est ce que c'est ?<i class="fa-solid fa-arrow-right"></i></p></a>
            
           </div>
            </section>
-          <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+          <div class="logo-assurance">
+            <img src="./site sabri/image/logo swiss life.png" alt="swiss life">
+            <img src="./site sabri/image/logo genrali.png" alt="generali">
+            <img src="./site sabri/image/Logo_Alptis 1.png" alt="alptis">
+            <img src="./site sabri/image/card-abeille-dk 1.png" alt="abeille">
+            <img src="./site sabri/image/logo_april 1.png" alt="april">
           </div>
       </section>
       <!--qui sommes nous-->
-      <section class="description2">
+      <section class="description2" id="qui">
           <h1>Qui sommes-nous ?</h1>
           <h2>SC2A c'est avant tout...</h2>
-          <section class="photo-nom">  
+        <section class="photo-nom">
+            <div class="textdescription">
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           Placeat, ratione excepturi asperiores aperiam culpa architecto odio ut officia, earum quidem magnam sit, voluptatibus neque saepe unde reiciendis veniam animi cumque.
           Ex iusto illum earum ea soluta quis laborum, et aperiam minima eveniet voluptatibus reprehenderit rerum eius commodi deleniti ab nihil facilis, dolor placeat nesciunt! Cupiditate veritatis voluptate corporis eaque accusantium!</p>
-         
-          <img class="cercle" src="./site sabri/image/sabri-aouidat__pxj0ha.jpg" alt="Sabri Aouidat">
+            </div>
+          <div class="cercle-image">
+           <img class="cercle " src="./site sabri/image/sabri-aouidat__pxj0ha.jpg" alt="Sabri Aouidat">
             <p>Sabri Aouidat
               <br>Directeur général
             </p>
-          <img class="cercle" src="./site sabri/image/mere sabri.jpg" alt="Fabienne Aouidat"><p>Fabienne Aouidat<br>Directrice Administrative</p>
+          </div>
         </section>  
       </section>
       <!--Entreprises-->
-    <section class="solutions">
+    <section class="solutions" id="solution">
         <h1>Nos solutions</h1>
-        <h2>Pour les entreprises</h2>
+        <div class="textcentre">
+        <h4>Pour les entreprises</h4>
+        
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos facere sed aspernatur molestias beatae nulla, ab deserunt commodi accusamus quod odit aliquam quidem itaque voluptas eligendi! Labore vel eos magnam.</p>
-      <section class="listcards">
+        </div>
+        <section class="listcards">
         <article class="cards">
         <i></i>
         <h3>Retraite</h3>
@@ -110,17 +117,20 @@
     </section>
       <!--particuliers-->
       <section class="particuliers">
-        <h2>Pour les particuliers</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos facere sed aspernatur molestias beatae nulla, ab deserunt commodi accusamus quod odit aliquam quidem itaque voluptas eligendi! Labore vel eos magnam.</p>
-       <section class="listcards">
-        <article class="cards">
-        <i></i>
+        <div class="textcentre">
+          <h4>Pour les particuliers</h4>
+          
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos facere sed aspernatur molestias beatae nulla, ab deserunt commodi accusamus quod odit aliquam quidem itaque voluptas eligendi! Labore vel eos magnam.</p>
+        </div>
+         <section class="listcards">
+          <article class="cards">
+          <i></i>
         <h3>Retraite</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam vel fuga repellat alias consequatur exercitationem perferendis pariatur rerum sequi quidem. Incidunt porro quaerat, provident id officia excepturi nemo deserunt! Vitae.</p>
        </article>
 
        <article class="cards">
-        <i></i>
+          <i></i>
         <h3>Autos</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam vel fuga repellat alias consequatur exercitationem perferendis pariatur rerum sequi quidem. Incidunt porro quaerat, provident id officia excepturi nemo deserunt! Vitae.</p>
        </article>
@@ -152,18 +162,24 @@
         <a href=""><p class="btn-contact">En savoir plus</p></a>
       </section>
       <!--Où nous trouver-->
-      <section class="ou">
+      <section class="ou" id="trouver">
         <h1>Où nous trouver ?</h1>
+        <div class="ou2">
         <h2>21 rue Victor Hugo
             <br>21000 Dijon
         </h2>
+        </div>
         <div class="p-btn">
         <a href=""><p class="btn-contact">S'y rendre</p></a>
         </div>
-        <img src="" alt="">
+        <div class="localisation">
+        <img src="./site sabri/image/Vector.png">
+        <img src="./site sabri/image/Mapsicle Map.png" alt="sc2a adresse">
+        </div>
+
       </section>
       <!--contact-->
-      <section class="contact">
+      <section class="contact" id="contact">
         <h1>Contactez-Nous</h1>
         <h3>Vous êtes :</h3>
       </section>
@@ -219,5 +235,6 @@
       </form>
     
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>
