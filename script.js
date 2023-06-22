@@ -1,3 +1,4 @@
+
 document.getElementById("myForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Empêche le rechargement de la page par défaut
 

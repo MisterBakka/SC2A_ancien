@@ -1,14 +1,17 @@
  html {
-  min-width: 1440px;
   margin: 0%;
   padding: 0%;
-  Height:5912px
-  Top: -480px
-  left: -655px
+  min-width: 1440px;
+  }
+
+  @font-face {
+    font-family: 'futura';
+    src: url(../font/Futura.ttc);
+    
   }
   /* Styles généraux */
   body {
-    font-family: 'futura'
+    font-family: 'futura'; sans-serif;
     min-width: 100%;
     margin: 0;
     z-index: 2;
@@ -16,19 +19,15 @@
 
  h1 {
  
-  min-width: 53%;
-  height: 198px;
-  left: 127px;
-  top: 227px;
-
-  font-family: 'Futura';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 66px;
   display: flex;
-  align-items: center;
+  width: 690px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
   color: #D68F07;
+  font-size: 50px;
+  font-family: Futura;
+  font-weight: 700;
  }
  h2 {
   
@@ -42,9 +41,24 @@
   font-weight: 700;
   font-size: 37px;
   line-height: 49px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+
+
+  color: #000000;
+
+  text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+ }
+
+ h4 {
+  height: 48px;
+  left: 122px;
+  top: 1306px;
+
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 49px;
+
 
   color: #000000;
 
@@ -56,7 +70,7 @@
 
   main {
     padding: 0 67px 0 67px;
-    background: linear-gradient(	#87CEFA	, white,#87CEFA	, white, #87CEFA, white	);
+    background: linear-gradient(	rgba(59, 130, 180, 0.793897)	, white,rgba(59, 130, 180, 0.793897)	, white, rgba(59, 130, 180, 0.793897), white	);
   }
   .header {
     min-width: 100%;
@@ -76,12 +90,16 @@
     height: 125px;
     margin: 125px;
     cursor: pointer;
+    
   }
   
   .description {
     margin: 0px 0px 0 119px;
+    
+
   }
  .textdescription {
+  width: 50%;
  }
   .menu {
     list-style-type: none;
@@ -132,7 +150,6 @@
   }
   .firstlottie {
     position: absolute;
-    width: 50%;
     height: 328px;
     left: 832px;
     top: 338px;
@@ -149,6 +166,10 @@ background: url(.png);
     border-radius: 50%; /* Applique une forme de cercle */
     overflow: hidden; /* Masque le contenu qui dépasse du cercle */
   }
+  .cercle-image {
+    display: flex;
+    flex-direction: column;
+  }
   
   .cercle img {
     width: 100%; /* Ajuste la taille de l'image pour remplir le conteneur */
@@ -161,6 +182,7 @@ background: url(.png);
     height: 50px;
     background-color:  #D68F07 ;
     border-radius: 25px;
+    margin: 50px;
 
   }
   .p-btn {
@@ -169,16 +191,18 @@ background: url(.png);
     font-weight: 500;
     line-height: 19px;
     color: white;
-    transform: matrix(1, 0, 0, -1, 0, 0);
+    /* transform: matrix(1, 0, 0, -1, 0, 0); */
     cursor: pointer;
-    padding: 28px 35px 5px;
+    padding: 5px 35px 5px;
     margin: 10px;
     text-decoration: none;
-  }
+}
+  
   .btn-question {
     display: flex;
     flex-direction: row;
     gap: 5%;
+  
   }
   .question {
     display: flex;
@@ -193,7 +217,18 @@ background: url(.png);
     line-height: 27px;
   }
   .text1 {
-    margin-top: 100px;
+    height: 269px;
+    width: 583px;
+    left: 122px;
+    top: 1373px;
+
+
+  }
+  .logo-assurance {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 170px;
+
   }
   /***description**/
   .description2 {
@@ -202,7 +237,9 @@ background: url(.png);
   }
 
   .photo-nom {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
 
@@ -236,9 +273,20 @@ background: url(.png);
   .particuliers {
     margin: 0px 0px 0 119px;
   }
+  .textcentre {
+    text-align: center; 
+   
+  
+  }
   /****ou***/
   .ou {
   margin: 0px 0px 0 119px;
+  }
+  .ou2 {
+
+  }
+  .localisation {
+    width: auto;
   }
 
   /**contact**/
