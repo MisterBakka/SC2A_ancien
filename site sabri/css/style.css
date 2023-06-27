@@ -1,20 +1,17 @@
 @font-face {
   font-family: 'futura';
-  src: url(../font/futura);}
- 
+  src: url(../font/Futura.ttc);
+}
  html {
-
   margin: 0%;
   padding: 0%;
   min-width: 1440px;
- 
-    
   }
 
   
   /* Styles généraux */
   body {
-    font-family: 'futura'; sans-serif;
+    font-family: 'futura'; 
     min-width: 100%;
     margin: 0;
     z-index: 2;
@@ -86,6 +83,7 @@
     position: sticky;
     top: 0px;
     z-index: 9999;
+    transition: top 0.2s ease;
   }
   
   .logo {
@@ -196,20 +194,27 @@ background: url(.png);
   .cercle {
     width: 200px; /* Ajustez la taille du conteneur selon vos besoins */
     height: 200px;
-    border-radius: 50%; /* Applique une forme de cercle */
     overflow: hidden; /* Masque le contenu qui dépasse du cercle */
+    background: url(<path-to-image>), lightgray 0px 16.849px / 100% 106.13% no-repeat;
+    border-radius: 461px;
+  background: #D9D9D9;
   }
   .cercle-image {
     display: flex;
     flex-direction: column;
+  
   }
   
-  .cercle img {
+  .cercle-img {
     width: 100%; /* Ajuste la taille de l'image pour remplir le conteneur */
     height: 100%;
     object-fit: cover; /* Redimensionne l'image pour remplir le conteneur */
   }
-
+  .imgsabri {
+    width: 461px;
+    height: 461px;
+    /* border: -142px -21px -143px ; */
+  }
   .sabri {
    text-align: center;
   }
@@ -271,15 +276,18 @@ background: url(.png);
   /***description**/
   .description2 {
 
-    margin: 0px 0px 0 119px;
+    margin: 150px 0px 0 119px;
+
    
     
   }
-
-  .photo-nom {
+  .textsabriimg {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+  }
+  .photo-nom {
+    display: flex;
+    flex-direction: column;
   }
 
 
@@ -289,6 +297,8 @@ background: url(.png);
   .solutions {
     margin: 0px 0px 0 119px;
   }
+
+   
   .listcards {
     display: flex;
     gap: 24px;
@@ -308,7 +318,62 @@ background: url(.png);
     background: linear-gradient(180deg, #FFF 0%, rgba(217, 217, 217, 0.00) 100%);
     flex-wrap: wrap;
   }
-
+  .ellips {
+    width: 34px;
+    height: 34px;
+    border-radius: 34px;
+    background: linear-gradient(180deg, #8ECAE6 0%, rgba(217, 217, 217, 0.00) 100%);
+  }
+  .ellips1 {
+    width: 34px;
+    height: 34px;
+    border-radius: 34px;
+    background: linear-gradient(180deg, #B233DE 0%, rgba(217, 217, 217, 0.00) 100%);
+  }
+  .ellips2 {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    border-radius: 34px;
+    background: linear-gradient(180deg, #21C950 0%, rgba(217, 217, 217, 0.00) 100%);
+  }
+  .ellips3 {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    border-radius: 34px;
+    background: linear-gradient(180deg, #DC7878 0%, rgba(217, 217, 217, 0.00) 100%);
+  }
+  .ellips4 {
+    width: 34px;
+    height: 40.022px;
+    flex-shrink: 0;
+    border-radius: 40.022px;
+    background: linear-gradient(180deg, #A37952 0%, rgba(217, 217, 217, 0.00) 100%);
+  }
+  .vector {
+    width: 16px;
+    height: 24px;
+  }
+  .vector1 {
+    width: 22px;
+    height: 18px;
+  }
+  .vector2 {
+    width: 17.333px;
+    height: 21.667px;
+    flex-shrink: 0;
+  }
+  .vector3 {
+    width: 21.875px;
+    height: 21.875px;
+    flex-shrink: 0;
+  }
+  .vector4 {
+    width: 20px;
+    height: 22.365px;
+    flex-shrink: 0;
+  }
   .particuliers {
     margin: 0px 0px 0 119px;
   }
@@ -326,6 +391,8 @@ background: url(.png);
   }
   .localisation {
     width: auto;
+    display: flex;
+    flex-direction: row;
   }
 
   /**contact**/
@@ -333,14 +400,9 @@ background: url(.png);
   .contact {
     margin: 0px 0px 0 119px;
   }
-  
 
   /*** footer ****/
-  footer {
-    background-color: #f2f2f2;''
-    padding: 20px;
-    text-align: center;
-  }
+
   form {
     width: 300px;
   }
