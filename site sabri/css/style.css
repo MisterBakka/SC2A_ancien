@@ -105,7 +105,7 @@
 
   }
  .textdescription {
-  width: 50%;
+  width: 75%;
  }
   .menu {
     list-style-type: none;
@@ -319,7 +319,7 @@ font-weight: 500;
     width: 100%;
     margin-top: 23px;
     margin-bottom: 40px;
-    justify-content: space-around;
+    justify-content: center;
    
   }
   .cards {
@@ -426,7 +426,7 @@ margin-bottom: 100px;
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 40px -10px #000;
-    margin: calc(50vh - 275px) 950px;
+    /* margin: calc(50vh - 275px) 950px; */
     padding: 20px 40px;
     max-width: calc(100vw - 40px);
     box-sizing: border-box;
@@ -486,4 +486,8 @@ margin-bottom: 100px;
   width: 506.152px;
   padding-left: 125px;
 
+}
+.lottieformulaire {
+  display: flex;
+  justify-content: space-between;
 }
