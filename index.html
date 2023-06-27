@@ -9,26 +9,27 @@
 </head>
 <body>
   <!--header-->
-    <header class="header" class="bar" id="navbar">
-      <div>
-        <img href="index.html" class="logo" src="./site sabri/Logo/logo 1.png" alt="SC2A">
-      </div>
-      <nav>
-        <ul class="menu">
-          <li><a href="#qui" class="lienancre"><span class="bar"></span>Qui sommes-nous ?</a></li>
-          <li><a href="#solution" class="lienancre"><span class="bar"></span>Nos solutions</a></li>
-          <li><a href="#trouver" class="lienancre"><span class="bar"></span>Où nous trouvez ?</a></li>
-          <li><a href="#contact" class="contactez"><span class="bar"></span>Contactez-nous</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header class="header" class="bar" id="navbar">
+    <div>
+      <img href="index.html" class="logo" src="./site sabri/Logo/logo 1.png" alt="SC2A">
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#qui" class="lienancre"><span class="bar"></span>Qui sommes-nous ?</a></li>
+        <li><a href="#solution" class="lienancre"><span class="bar"></span>Nos solutions</a></li>
+        <li><a href="#trouver" class="lienancre"><span class="bar"></span>Où nous trouvez ?</a></li>
+        <li><a href="#contact" class="contactez"><span class="bar"></span>Contactez-nous</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main-container">
     <!--Main-->
     <main>
       <section class="description">
         <h1>UNE SÉCURITÉ PRÉSERVÉE
           EST UN AVENIR ASSURÉ 
         </h1>
-           <div class="firstlottie">
+           <div id="firstlottie">
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
             <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_ywnbv2n0.json"  background="transparent"  speed="1"  style="width: 100%; height: 328px;"  loop  autoplay></lottie-player>
            </div>
@@ -127,7 +128,9 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam vel fuga repellat alias consequatur exercitationem perferendis pariatur rerum sequi quidem. Incidunt porro quaerat, provident id officia excepturi nemo deserunt! Vitae.</p>
        </article>
       </section>
-        <a href=""><p class="btn-contact">En savoir plus</p></a>
+      <div class="button">
+        <a href="#contact"><p class="btn-contact">En savoir plus</p></a>
+      </div>
     </section>
       <!--Entreprises-->
     <section class="solutions" id="solution">
@@ -167,7 +170,9 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam vel fuga repellat alias consequatur exercitationem perferendis pariatur rerum sequi quidem. Incidunt porro quaerat, provident id officia excepturi nemo deserunt! Vitae.</p>
        </article>
       </section>
-        <a href=""><p class="btn-contact">En savoir plus</p></a>
+      <div class="button">
+        <a href="#contact"><p class="btn-contact">En savoir plus</p></a>
+      </div>
     </section>
       <!--particuliers-->
       <section class="particuliers">
@@ -213,7 +218,9 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam vel fuga repellat alias consequatur exercitationem perferendis pariatur rerum sequi quidem. Incidunt porro quaerat, provident id officia excepturi nemo deserunt! Vitae.</p>
        </article>
        </section>
-        <a href=""><p class="btn-contact">En savoir plus</p></a>
+       <div class="button">
+        <a href="#contact"><p class="btn-contact">En savoir plus</p></a>
+       </div>
       </section>
       <!--Où nous trouver-->
       <section class="ou" id="trouver">
@@ -224,11 +231,7 @@
         </h2>
         </div>
         <section class="localisation">
-          <div class="p-btn">
-          <a href=""><p class="btn-contact">S'y rendre</p></a>
-          </div>
-          <img src="./site sabri/image/Vector.png" alt="sc2a adresse">
-          </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2704.3920829482463!2d5.02731417691762!3d47.326213571165496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f29d93ae2fb7c7%3A0x39448e8cd7b9291!2s21%20Av.%20Victor%20Hugo%2C%2021000%20Dijon!5e0!3m2!1sfr!2sfr!4v1687907050828!5m2!1sfr!2sfr" width="100%" height="600" style="border:0;border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
       </section>
       <!--contact-->
@@ -239,7 +242,7 @@
 
 
 
-      <form class="myForm" id="myForm">
+      <form class="myForm" id="myForm" action="form-handler.php" method="POST">
         <label>
           <input type="radio" name="type" value="particulier"> Particulier
         </label>
@@ -289,5 +292,6 @@
     
     </main>
     <script src="./script.js"></script>
+  </div>
 </body>
 </html>

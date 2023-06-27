@@ -12,11 +12,15 @@
   /* Styles généraux */
   body {
     font-family: 'futura'; 
-    min-width: 100%;
     margin: 0;
+    min-width: 100%;
     z-index: 2;
-  }
+    background: linear-gradient(180deg, #7CBCFF 0%, #FFF 15.84%, #FFF 27.46%, #7CC9FF 44.26%, #FFF 93.16%);
 
+  }
+.main-container {
+  margin: 0 122px 0 119px;
+}
  h1 {
  
   display: flex;
@@ -68,10 +72,8 @@
  }
 
   main {
-    padding: 0 67px 0 67px;
-  
-    background: linear-gradient(	rgba(59, 130, 180, 0.793897)	, white,rgba(59, 130, 180, 0.793897)	, white, rgba(59, 130, 180, 0.793897), white	);
-} 
+    /* padding: 0 67px 0 67px; */
+  }
   .header {
     min-width: 100%;
     height: 170px;
@@ -95,7 +97,7 @@
   }
   
   .description {
-    margin: 0px 0px 0 119px;
+    /* margin: 0 122px 0 119px; */
 
    
    
@@ -130,7 +132,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 27px;
-
+    scroll-behavior: 0.4s ease;
   }
   .lienancre:hover {
     border-bottom: 1px solid;
@@ -152,7 +154,7 @@
     color: #D68F07;
     border: 2.3px solid #D68F07;
   }
-  .firstlottie {
+  #firstlottie {
     position: absolute;
     height: 328px;
     left: 832px;
@@ -188,9 +190,7 @@ background: url(.png);
     flex-shrink: 0;
     padding-top: 30px;
   }
-  main {
-    padding: 20px;
-  }
+
   .cercle {
     width: 200px; /* Ajustez la taille du conteneur selon vos besoins */
     height: 200px;
@@ -219,13 +219,24 @@ background: url(.png);
   .sabri {
    text-align: center;
   }
+  .button {
+    display: flex;
+    justify-content: center;
+    color: #000;
+text-align: center;
+font-size: 20px;
+font-family: Futura;
+font-weight: 500;
+  }
+  
   .btn-contact {
     text-decoration: none;
     width: 200px;
     height: 50px;
     background-color:  #D68F07 ;
     border-radius: 25px;
-    margin: 50px;
+    margin: 50px 0;
+   
 
   }
   .p-btn {
@@ -277,7 +288,7 @@ background: url(.png);
   /***description**/
   .description2 {
 
-    margin: 150px 0px 0 119px;
+    margin: 150px 0px 0 0;
 
    
     
@@ -296,29 +307,28 @@ background: url(.png);
 
 /**solutions**/
   .solutions {
-    margin: 0px 0px 0 119px;
+   
   }
 
    
   .listcards {
     display: flex;
-    gap: 24px;
+    gap: 78px;
     row-gap: 24px;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 23px;
     margin-bottom: 40px;
+    justify-content: space-around;
    
   }
   .cards {
-    flex: 30%;
-    width: 100%;
-    background-color: white;
+    width: 345px;
+    height: 259px;
+    flex: wrap;
+    align-items: center;
     border-radius: 20px;
-    text-decoration: none;
     background: linear-gradient(180deg, #FFF 0%, rgba(217, 217, 217, 0.00) 100%);
-    flex-wrap: wrap;
-    backdrop-filter: blur(8px);
   }
   .ellips {
     width: 34px;
@@ -377,7 +387,7 @@ background: url(.png);
     flex-shrink: 0;
   }
   .particuliers {
-    margin: 0px 0px 0 119px;
+
   }
   .textcentre {
     text-align: center; 
@@ -386,9 +396,10 @@ background: url(.png);
   }
   /****ou***/
   .ou {
-  margin: 0px 0px 0 119px;
+  
   }
   .ou2 {
+margin-bottom: 100px;
 
   }
   .localisation {
@@ -400,20 +411,79 @@ background: url(.png);
   /**contact**/
 
   .contact {
-    margin: 0px 0px 0 119px;
+    margin: 0 122px 0 119px;
   }
 
   /*** footer ****/
 
-  form {
-    width: 300px;
+  body {
+    
   }
   
-  label, input, select, textarea {
+  .myForm {
+    width: 340px;
+    height: 550px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    margin: calc(50vh - 275px) 950px;
+    padding: 20px 40px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+  }
+  
+  
+  label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   
-  button[type="submit"] {
-    margin-top: 10px;
+  select,
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: color(srgb rgb(0, 0, 0) rgb(0, 0, 0) rgb(0, 0, 0));
+    resize: none;
+    /*border-radius: 4px;**/
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s;
   }
+  
+  select:focus,
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: #78788c;
+  }
+  
+  button {
+    padding: 8px 12px;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    background: #D68F07;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background: #974b0c;
+    color: #000;
+  }
+#lottiecontact {
+  position: absolute;
+  height: 328px;
+  left: 42px;
+  top: 2540px;
+  width: 506.152px;
+  padding-left: 125px;
+
+}
