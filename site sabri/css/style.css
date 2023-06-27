@@ -202,6 +202,7 @@ background: url(.png);
   .cercle-image {
     display: flex;
     flex-direction: column;
+    padding: 0 50px 0 0;
   
   }
   
@@ -317,6 +318,7 @@ background: url(.png);
     text-decoration: none;
     background: linear-gradient(180deg, #FFF 0%, rgba(217, 217, 217, 0.00) 100%);
     flex-wrap: wrap;
+    backdrop-filter: blur(8px);
   }
   .ellips {
     width: 34px;
