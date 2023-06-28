@@ -242,7 +242,7 @@ background: url(.png);
   
   .btn-contact {
     text-decoration: none;
-    width: 193px;
+    width: 145px;
     height: 53px;
     background-color: #D68F07;
     border-radius: 20px;
@@ -250,7 +250,7 @@ background: url(.png);
     display: flex;
     justify-content: center; /* Centrer horizontalement */
     align-items: center; /* Centrer verticalement */
-    padding: 5px 35px;
+    padding: 5px 15px;
     color: black;
   }
   
@@ -323,7 +323,7 @@ background: url(.png);
 
 /**solutions**/
   .solutions {
-   margin: 308px 0;
+   margin: 308px 0 0;
   }
 
    
@@ -644,4 +644,38 @@ margin-bottom: 100px;
 .lottieformulaire {
   display: flex;
   justify-content: space-between;
+}
+footer {
+  height: 145px;
+  display: flex;
+  align-items: center;
+}
+
+.left-section {
+  justify-content: space-between;
+  display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 152px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.right-section {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+  gap: 62px;
+}
+
+footer p {
+  margin: 0;
+  color: #B7B7B7;
+  font-size: 15px;
+  font-family: Futura;
+  font-weight: 500;
 }
