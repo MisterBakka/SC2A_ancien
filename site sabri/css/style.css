@@ -50,6 +50,13 @@
 
   text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
  }
+ h3 {
+  color: #000;
+  font-size: 20px;
+  font-family: Futura;
+  margin: 0 0 0 39px;
+
+ }
 
  h4 {
   height: 48px;
@@ -160,6 +167,7 @@
     left: 832px;
     top: 280px;
     width: 506.152px;
+    margin: 0 47px;
 
 background: url(.png);
   }
@@ -219,36 +227,44 @@ background: url(.png);
   .sabri {
    text-align: center;
   }
+  
   .button {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
     color: #000;
-text-align: center;
-font-size: 20px;
-font-family: Futura;
-font-weight: 500;
+    text-align: center;
+    font-size: 20px;
+    font-family: Futura;
+    font-weight: 500;
+    text-decoration: none;
   }
   
   .btn-contact {
     text-decoration: none;
-    width: 200px;
-    height: 50px;
-    background-color:  #D68F07 ;
-    border-radius: 25px;
+    width: 193px;
+    height: 53px;
+    background-color: #D68F07;
+    border-radius: 20px;
     margin: 50px 0;
-   
-
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    padding: 5px 35px;
+    color: black;
   }
+  
+  
   .p-btn {
     width: 100%;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: Futura;
     font-weight: 500;
     line-height: 19px;
-    color: white;
+    color: black;
     /* transform: matrix(1, 0, 0, -1, 0, 0); */
     cursor: pointer;
-    padding: 5px 35px 5px;
-    margin: 10px;
+  
     text-decoration: none;
 }
   
@@ -307,7 +323,7 @@ font-weight: 500;
 
 /**solutions**/
   .solutions {
-   
+   margin: 308px 0;
   }
 
    
@@ -323,49 +339,72 @@ font-weight: 500;
    
   }
   .cards {
-    width: 345px;
-    height: 259px;
-    flex: wrap;
-    align-items: center;
-    border-radius: 20px;
-    background: linear-gradient(180deg, #FFF 0%, rgba(217, 217, 217, 0.00) 100%);
+      width: 345px;
+      height: 259px;
+      flex: wrap;
+      align-items: center;
+      border-radius: 20px;
+      background: linear-gradient(180deg, #FFF 0%, rgba(217, 217, 217, 0.00) 100%);
+      backdrop-filter: blur(10px); /* Ajoute le flou */
+    
+     
+    
   }
   .ellips {
     width: 34px;
     height: 34px;
     border-radius: 34px;
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center;
+    margin: 31px 0px 8px 41px;
     background: linear-gradient(180deg, #8ECAE6 0%, rgba(217, 217, 217, 0.00) 100%);
+    
   }
   .ellips1 {
     width: 34px;
     height: 34px;
     border-radius: 34px;
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center;
+    margin: 31px 0px 8px 41px;
     background: linear-gradient(180deg, #B233DE 0%, rgba(217, 217, 217, 0.00) 100%);
   }
   .ellips2 {
     width: 34px;
     height: 34px;
-    flex-shrink: 0;
     border-radius: 34px;
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center;
+    margin: 31px 0px 8px 41px;
     background: linear-gradient(180deg, #21C950 0%, rgba(217, 217, 217, 0.00) 100%);
   }
   .ellips3 {
     width: 34px;
     height: 34px;
-    flex-shrink: 0;
     border-radius: 34px;
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center;
+    margin: 31px 0px 8px 41px;
     background: linear-gradient(180deg, #DC7878 0%, rgba(217, 217, 217, 0.00) 100%);
   }
   .ellips4 {
     width: 34px;
-    height: 40.022px;
-    flex-shrink: 0;
-    border-radius: 40.022px;
+    height: 34px;
+    border-radius: 34px;
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center;
+    margin: 31px 0px 8px 41px;
     background: linear-gradient(180deg, #A37952 0%, rgba(217, 217, 217, 0.00) 100%);
   }
   .vector {
     width: 16px;
     height: 24px;
+   
   }
   .vector1 {
     width: 22px;
@@ -386,6 +425,114 @@ font-weight: 500;
     height: 22.365px;
     flex-shrink: 0;
   }
+
+  .ellips-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 31px 0px 8px 41px;
+  }
+  
+  .ellips10,
+  .ellips20 {
+    width: 34px;
+    height: 34px;
+    border-radius: 34px;
+    margin-right: -8px;
+  }
+  
+  .ellips10 {
+    background: linear-gradient(180deg, #B233DE 0%, rgba(217, 217, 217, 0.00) 100%);
+  }
+  
+  .ellips20 {
+    background: linear-gradient(180deg, #21C950 0%, rgba(217, 217, 217, 0.00) 100%);
+  }
+  
+  .vector10,
+  .vector20 {
+    width: 16px;
+    height: 24px;
+    display: block;
+    margin: 5px 0px 0px 9px;
+  }
+  .vector6 {
+    width: 22px;
+    height: 20px;
+
+  }
+  .vector7 {
+    width: 22px;
+    height: 20px;
+
+  }
+  .vector8 {
+    width: 22px;
+    height: 20px;
+
+  }
+  .vector9 {
+    width: 22px;
+    height: 20px;
+
+  }
+  .vector11 {
+    width: 22px;
+    height: 20px;
+
+  }
+  .ellips6 {
+    width: 34px;
+    height: 34px;
+    border-radius: 34px;
+    background: linear-gradient(180deg, #E3D65B 0%, rgba(217, 217, 217, 0.00) 100%); 
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center;
+    margin: 31px 0px 8px 41px;
+  }
+
+
+  .ellips8 {
+    width: 34px;
+    height: 34px;
+    border-radius: 34px;
+    background: linear-gradient(180deg, #E3D65B 0%, rgba(217, 217, 217, 0.00) 100%); 
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center;
+    margin: 31px 0px 8px 41px;
+  } 
+  .ellips9 {
+    width: 34px;
+    height: 34px;
+    border-radius: 34px;
+    background: linear-gradient(180deg, #A37952 0%, rgba(217, 217, 217, 0.00) 100%);
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center;
+    margin: 31px 0px 8px 41px;
+  }
+  .ellips11 {
+    width: 34px;
+    height: 34px;
+    border-radius: 35.545px;
+    background: linear-gradient(180deg, #2150C9 0%, rgba(217, 217, 217, 0.00) 100%);
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center;
+    margin: 31px 0px 8px 41px;
+  }
+  
+  .p-textcards {
+    width: 245px;
+    height: 109px;
+    color: #000;
+    font-size: 15px;
+    font-family: Myriad Pro;
+    padding: 7Px 0 0 0;
+    margin: 0 0 0 22px;
+  }
   .particuliers {
 
   }
@@ -394,6 +541,13 @@ font-weight: 500;
    
   
   }
+  .undertext {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
   /****ou***/
   .ou {
   
