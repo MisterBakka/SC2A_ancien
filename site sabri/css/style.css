@@ -118,10 +118,8 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     margin: 0 72px 0 0;
-    width: 90%;
+    width: 100%;
   }
   
   .menu li {
@@ -580,7 +578,9 @@ margin-bottom: 100px;
   /**contact**/
 
   .contact {
-    margin: 0 122px 0 119px;
+ display: flex;
+ flex-direction: column;
+    align-items: center;
   }
 
   /*** footer ****/
@@ -590,8 +590,8 @@ margin-bottom: 100px;
   }
   
   .myForm {
-    width: 340px;
-    height: 550px;
+    width: 50%;
+    height: 600px;
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 40px -10px #000;
@@ -614,13 +614,19 @@ margin-bottom: 100px;
   input[type="email"],
   textarea {
     width: 100%;
-    padding: 10px;
+    padding-left: 0px;
+    padding-bottom: 10px;
     box-sizing: border-box;
+    border-bottom: 1px solid #b46f3a;
+    border-top: none;
+    border-right: none;
+    border-left: none;
     background: none;
-    outline: color(srgb rgb(0, 0, 0) rgb(0, 0, 0) rgb(0, 0, 0));
+    outline: none;
     resize: none;
     /*border-radius: 4px;**/
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
     transition: all 0.3s;
   }
   
@@ -628,7 +634,7 @@ margin-bottom: 100px;
   input[type="text"]:focus,
   input[type="email"]:focus,
   textarea:focus {
-    border-color: #78788c;
+    border-color: #1010cb;
   }
   
   button {
@@ -703,19 +709,29 @@ footer p {
     padding: 0;
     margin: auto;
 }
+html {
+  min-width: 767px
+}
 h1 {
-  display: flex;
-  width: 324.504px;
-  height: 62.079px;
-  flex-direction: column;
+  display: inline-flex;
+  padding: 13px 99px 12px 98px;
   justify-content: center;
-  flex-shrink: 0;
-  color: #D68F07;
-  font-size: 23px;
-  font-family: Futura;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  align-items: center;
+  }
+  h2 {
+    display: flex;
+    width: 321px;
+    height: 48px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    text-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.25);
+    font-family: Futura;
+    font-size: 18.5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
 
 .main-container {
@@ -735,6 +751,7 @@ h1 {
   flex-shrink: 0;
   cursor: pointer;
   display: flex;
+  top: 37px;
   
 }
 nav {
@@ -744,10 +761,67 @@ nav {
 .lotties {
   display: flex;
   flex-direction: column;
-  align-items: center;
 
 }
 #firstlottie {
-  position: inherit;
+  /* position: inherit; */
+  display: none;
+}
+.question {
+  display: none;
+}
+.btn-contact {
+  width: 165.713px;
+  height: 42.669px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #D68F07;
+}
+.p-btn {
+  width: 149px;
+  height: 19px;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: Futura;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.logo-assurance {
+  display: block;
+}
+.logo-part1 {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-part2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+/* qui somms nous ? */
+
+.textsabriimg {
+  display: flex;
+  flex-direction: column;
+}
+.imgsabri {
+
+flex-shrink: 0;
+border-radius: 20px;
+margin: 0;
+
+}
+.cercle {
+  display: block;
+}
+.cercle-image {
+  display: block;
+}
+.cercle-img {
+  display: block;
 }
 }
