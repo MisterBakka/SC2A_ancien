@@ -4,11 +4,11 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
 
     // Récupération des valeurs des champs
     var type = document.querySelector('input[name="type"]:checked').value;
-    var prenom = document.getElementById("prenom").value;
-    var nom = document.getElementById("nom").value;
-    var email = document.getElementById("email").value;
-    var sujet = document.getElementById("sujet").value;
-    var message = document.getElementById("message").value;
+    var prenom = document.querySelector('input[name="prenom"]').value;
+    var nom = document.querySelector('input[name="nom"]').value;
+    var email = document.querySelector('input[name="mail"]').value;
+    var sujet = document.querySelector('select[name="sujet"]').value;
+    var message = document.querySelector('textarea[name="message"]').value;
 
     // Construction des données du formulaire
     var formData = {
