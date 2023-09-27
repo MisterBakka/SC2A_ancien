@@ -805,7 +805,10 @@ nav {
   line-height: normal;
 }
 .logo-assurance {
-  display: block;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .logo-part1 {
   display: flex;
