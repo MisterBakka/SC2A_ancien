@@ -79,7 +79,9 @@
 
   main {
     /* padding: 0 67px 0 67px; */
+    
   }
+  
   .header {
     width: 100%;
     height: 170px;
@@ -101,7 +103,7 @@
   .logo {
     width: 100px;
     height: 125px;
-    margin: 125px;
+    margin: 125px 65px;
     cursor: pointer;
     
   }
@@ -126,7 +128,47 @@
     justify-content: space-evenly;
     padding: 0px 
   }
-  
+  /* Styles pour le menu burger */
+.menu-toggle {
+  display: none; /* Masquer par défaut */
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+/* Styles pour afficher le menu lorsque le menu burger est ouvert */
+.show-menu {
+  display: block !important;
+  animation: slide-down 0.5s ease-in-out; /* Animation de descente */
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* Styles pour masquer le menu lorsqu'il est fermé */
+.menu {
+  display: none;
+  animation: slide-up 0.5s ease-in-out; /* Animation de montée */
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
 
   
   .menu a {
@@ -699,7 +741,7 @@ footer p {
 
 /*-----RESPONSIVE-----*/
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:1020px) {
 /*---general---*/
   body {
     padding: 0;
@@ -754,6 +796,14 @@ h1 {
 nav {
   display: none
 }
+  .menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block; /* Afficher le menu burger */
+  }
+  
 /**main**/
 .lotties {
   display: flex;

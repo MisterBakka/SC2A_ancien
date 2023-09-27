@@ -103,7 +103,7 @@ var prevScrollpos = window.pageYOffset;
     
         // reception
 
-        const nodemailer = require('nodemailer');
+        const nodemailer = required('nodemailer');
 
 // Configuration du transporteur SMTP pour l'envoi des e-mails
 const transporter = nodemailer.createTransport({
@@ -154,3 +154,13 @@ const formData = {
 };
 
 sendEmail(formData);
+
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  menuToggle.addEventListener('click', function () {
+    menu.classList.toggle('show-menu');
+  });
+});
+
